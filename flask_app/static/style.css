@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.page{
+    height: 300px;
+    width: 350px;
+    display: inline;
+
+}
+
+
+
+form{
+    margin-left: 400px;
+    margin-top: 20px;
+}
+
+
+h2{
+    margin-left: 400px;
+    padding-top: 80px;
+}
+
+h1{
+    margin-left: 430px;
+    margin-top: 40px;
+}
+
+.headerss{
+    display: flex;
+}
+
+#but{
+    border-radius: 5px;
+    width: 25px;
+    height: 15px;
+    background-color: rgb(21, 182, 82);
+    color: black;
+}
+

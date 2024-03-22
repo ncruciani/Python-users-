@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Here are our users!!!</h1>
+
+    <div class="whole">
+
+        <form action="/create/user">
+
+            <table class="table">
+
+                <div class= 'headerss'>
+
+                    <th> First Name</th>
+
+                    <th>Last Name</th>
+
+                    <th>Email</th>
+
+                    <th>Created at</th>
+            
+                </div>
+
+            {% for user in people %}
+
+                <tr>
+
+                    <td>{{user['first_name']}}</td>
+
+                    <td>{{user['last_name']}}</td>
+
+                    <td>{{user['email']}}</td>
+
+                    <td>{{user['created_at']}}</td>
+
+                </tr>
+            
+            {% endfor %}
+
+            </table>
+
+            <a id='but' href='./.'>Add User</a>
+
+        </form>
+
+    </div>
+
+
+<script src="../static/script.js"></script>
+
+</body>
+</html>
